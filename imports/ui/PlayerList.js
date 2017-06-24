@@ -5,10 +5,18 @@ import PropTypes from 'prop-types';
 export default class PlayerList extends React.Component {
   renderPlayers() {
     if(this.props.players.length === 0){
-      return <h3>Add players to the list!</h3>
+      return (
+        <div>
+          <h3>Add players to the list!</h3>
+        </div>
+      );
     } else {
       return this.props.players.map((player) => {
-        return <Player key={player._id} player={player}/>
+        return (
+          <div>
+            <Player key={player._id} player={player}/>
+          </div>
+        );
       });
     }
   }
