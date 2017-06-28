@@ -11,8 +11,8 @@ export default class App extends React.Component {
   render() {
       return (
         <div>
-          <TitleBar title={this.props.title} />
-          <div className="wrapper"> 
+          <TitleBar title={this.props.title} sub={this.props.sub}/>
+          <div className="wrapper">
             <PlayerList players={this.props.players}/>
             <AddPlayer/>
           </div>

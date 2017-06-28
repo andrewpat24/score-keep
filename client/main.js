@@ -13,10 +13,10 @@ Meteor.startup(() => {
         score: -1
       }
     }).fetch();
-    let name = 'Andrew';
+    let subtitle = 'Created by Andrew';
     let title = 'Score Keep';
 
-    ReactDOM.render(<App title={title} players={players}/>, document.getElementById('app'));
+    ReactDOM.render(<App title={title} sub={subtitle} players={players}/>, document.getElementById('app'));
   });
 
   console.log(Players.find().fetch());
